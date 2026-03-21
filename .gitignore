@@ -1,0 +1,33 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+
+# Raw data only (too large for GitHub)
+data/raw/
+data/processed/
+
+# Root-level loose dataset files
+AZT1D*/
+HUPA-UCM*/
+*.zip
+
+# Debug/diagnostic files (not needed in repo)
+debug_result.txt
+debug2.py
+diag*.py
+diag*.txt
+sl_err*.txt
+sl_out*.txt
+streamlit_err.txt
+streamlit_out.txt
+syntax_check.txt
+test_err.txt
+test_out.txt
+
+# models/, outputs/, reports/ are INCLUDED (app needs them)

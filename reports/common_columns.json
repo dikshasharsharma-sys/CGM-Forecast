@@ -1,0 +1,8 @@
+[
+  "basal_rate",
+  "bolus_volume_delivered",
+  "carb_input",
+  "glucose",
+  "subject_id",
+  "time"
+]

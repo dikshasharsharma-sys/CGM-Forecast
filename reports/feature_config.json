@@ -1,0 +1,67 @@
+{
+  "feature_columns": [
+    "glucose_lag_1",
+    "glucose_lag_2",
+    "glucose_lag_3",
+    "glucose_lag_4",
+    "glucose_lag_5",
+    "glucose_lag_6",
+    "glucose_lag_7",
+    "glucose_lag_8",
+    "glucose_lag_9",
+    "glucose_lag_10",
+    "glucose_lag_11",
+    "glucose_lag_12",
+    "glucose_lag_13",
+    "glucose_lag_14",
+    "glucose_lag_15",
+    "glucose_lag_16",
+    "glucose_lag_17",
+    "glucose_lag_18",
+    "basal_rate",
+    "bolus_volume_delivered",
+    "carb_input",
+    "hour",
+    "day_of_week",
+    "glucose_roc_1",
+    "glucose_roc_2",
+    "glucose_roc_3",
+    "glucose_roc_4",
+    "glucose_roc_5",
+    "glucose_roll_mean_12",
+    "glucose_roll_std_12"
+  ],
+  "context_features": [
+    "basal_rate",
+    "bolus_volume_delivered",
+    "carb_input",
+    "hour",
+    "day_of_week"
+  ],
+  "lag_count": 18,
+  "roc_count": 5,
+  "rolling_window": 12,
+  "auto_feature_names": [
+    "glucose_roc_1",
+    "glucose_roc_2",
+    "glucose_roc_3",
+    "glucose_roc_4",
+    "glucose_roc_5",
+    "glucose_roll_mean_12",
+    "glucose_roll_std_12"
+  ],
+  "interval_minutes": {
+    "AZT1D": 5.0,
+    "HUPA": 5.0
+  },
+  "horizon_steps": {
+    "AZT1D": {
+      "30m": 6,
+      "60m": 12
+    },
+    "HUPA": {
+      "30m": 6,
+      "60m": 12
+    }
+  }
+}

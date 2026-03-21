@@ -1,0 +1,11 @@
+{
+  "accuracy": 0.96285,
+  "f1": 0.9515793355416988,
+  "roc_auc": 0.9202047628290421,
+  "train_samples": 80000,
+  "test_samples": 20000,
+  "classes": [
+    "AZT1D",
+    "HUPA"
+  ]
+}
