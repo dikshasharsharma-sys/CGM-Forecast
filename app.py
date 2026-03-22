@@ -533,14 +533,61 @@ def inject_css() -> None:
             [data-testid="stMetricValue"] { font-size: 1.3rem !important; font-weight: 800 !important; color: #0f172a !important; }
             [data-testid="stMetricLabel"] { font-size: 0.74rem !important; font-weight: 700 !important; color: #64748b !important; text-transform: uppercase !important; letter-spacing: 0.05em !important; }
 
-            /* ── Dataframe ───────────────────────────────────── */
-            [data-testid="stDataFrame"] { border-radius: 12px; overflow: hidden; }
+            /* ── Global text colour fixes (mobile + light mode) ─ */
+            /* Force all generic text to be dark so nothing disappears on light bg */
+            html, body, [class*="css"], .stApp,
+            [data-testid="stAppViewContainer"],
+            [data-testid="stVerticalBlock"],
+            [data-testid="stHorizontalBlock"] {
+                color: #0f172a !important;
+            }
+            /* Labels for every widget */
+            label, .stTextInput label, .stNumberInput label,
+            .stSelectbox label, .stCheckbox label,
+            [data-baseweb="form-control-label"],
+            [data-testid="stWidgetLabel"] > div,
+            [data-testid="stWidgetLabel"] p { color: #334155 !important; }
+
+            /* Number input text & buttons */
+            .stNumberInput input { color: #0f172a !important; }
+            .stNumberInput button { color: #0f172a !important; background: #f1f5f9 !important; }
+
+            /* Selectbox text */
+            .stSelectbox [data-baseweb="select"] div,
+            .stSelectbox [data-baseweb="select"] span { color: #0f172a !important; }
+
+            /* Subheaders, captions, markdown text */
+            [data-testid="stMarkdownContainer"] p,
+            [data-testid="stMarkdownContainer"] li,
+            [data-testid="stMarkdownContainer"] span,
+            [data-testid="stCaptionContainer"] p,
+            .stCaption, .stText { color: #334155 !important; }
+
+            /* Section headings (st.subheader) */
+            h1, h2, h3, h4, h5, h6,
+            [data-testid="stHeading"] { color: #0f172a !important; }
+
+            /* Alert / info / success / warning boxes */
+            [data-testid="stAlert"] div,
+            [data-testid="stAlert"] p { color: #0f172a !important; }
+
+            /* Metric tiles */
+            [data-testid="stMetricValue"],
+            [data-testid="stMetricLabel"] { color: #0f172a !important; }
+
+            /* Dataframe */
             [data-testid="stDataFrame"] td,
             [data-testid="stDataFrame"] th,
             [data-testid="stDataFrame"] span,
             [data-testid="stDataFrame"] div { color: #0f172a !important; }
             [data-testid="stDataFrame"] tr:nth-child(even) td { background: #f8fafc !important; }
             [data-testid="stDataFrame"] tr:nth-child(odd) td  { background: #ffffff !important; }
+
+            /* Checkbox labels */
+            .stCheckbox span { color: #334155 !important; }
+
+            /* Divider */
+            hr { border-color: #e2e8f0 !important; }
 
             /* ── Hero header ─────────────────────────────────── */
             @keyframes hero-shimmer {
