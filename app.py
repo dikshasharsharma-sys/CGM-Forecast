@@ -660,21 +660,21 @@ def inject_css() -> None:
                 background: rgba(139,92,246,0.25);
                 border: 1px solid rgba(139,92,246,0.45);
                 border-radius: 20px; padding: 0.22rem 0.75rem;
-                font-size: 0.7rem; font-weight: 800; color: #c4b5fd;
+                font-size: 0.7rem; font-weight: 800; color: #c4b5fd !important;
                 text-transform: uppercase; letter-spacing: 0.1em;
                 margin-bottom: 0.9rem;
             }
 
             .hero-title {
-                font-size: 2.6rem; font-weight: 900; color: #ffffff;
+                font-size: 2.6rem; font-weight: 900; color: #ffffff !important;
                 letter-spacing: -0.03em; line-height: 1.1;
                 margin-bottom: 0.5rem;
                 text-shadow: 0 2px 20px rgba(139,92,246,0.4);
             }
-            .hero-title-accent { color: #a78bfa; }
+            .hero-title-accent { color: #a78bfa !important; }
 
             .hero-subtitle {
-                font-size: 0.95rem; color: rgba(255,255,255,0.65);
+                font-size: 0.95rem; color: rgba(255,255,255,0.65) !important;
                 font-weight: 400; margin-bottom: 1.5rem;
                 max-width: 560px; line-height: 1.55;
             }
@@ -694,24 +694,24 @@ def inject_css() -> None:
             }
             .hero-stat:hover { background: rgba(255,255,255,0.11); }
             .hero-stat-value {
-                font-size: 1.35rem; font-weight: 900; color: #ffffff;
+                font-size: 1.35rem; font-weight: 900; color: #ffffff !important;
                 line-height: 1; letter-spacing: -0.02em;
             }
             .hero-stat-label {
-                font-size: 0.62rem; font-weight: 600; color: rgba(255,255,255,0.5);
+                font-size: 0.62rem; font-weight: 600; color: rgba(255,255,255,0.5) !important;
                 text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.2rem;
             }
-            .hero-stat-value-blue   { color: #93c5fd; }
-            .hero-stat-value-purple { color: #c4b5fd; }
-            .hero-stat-value-pink   { color: #f9a8d4; }
-            .hero-stat-value-amber  { color: #fcd34d; }
-            .hero-stat-value-green  { color: #6ee7b7; }
+            .hero-stat-value-blue   { color: #93c5fd !important; }
+            .hero-stat-value-purple { color: #c4b5fd !important; }
+            .hero-stat-value-pink   { color: #f9a8d4 !important; }
+            .hero-stat-value-amber  { color: #fcd34d !important; }
+            .hero-stat-value-green  { color: #6ee7b7 !important; }
 
             /* tag pills */
             .hero-badges { display: flex; gap: 0.45rem; flex-wrap: wrap; }
             .hero-badge {
                 background: rgba(255,255,255,0.08);
-                color: rgba(255,255,255,0.80);
+                color: rgba(255,255,255,0.80) !important;
                 font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
                 letter-spacing: 0.07em; padding: 0.25rem 0.75rem;
                 border-radius: 20px;
