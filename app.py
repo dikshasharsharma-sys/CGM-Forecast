@@ -519,9 +519,9 @@ def inject_css() -> None:
             .form-card-subtitle { display: block; }
             .glucose-range-pills { display: flex; gap: 0.4rem; margin-top: 0.6rem; flex-wrap: wrap; }
             .range-pill      { font-size: 0.68rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 20px; letter-spacing: 0.04em; }
-            .range-pill-low  { background: #fef9c3; color: #854d0e; border: 1px solid #fde68a; }
-            .range-pill-norm { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
-            .range-pill-high { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+            .range-pill-low  { background: #fef9c3; color: #ffffff !important; border: 1px solid #fde68a; }
+            .range-pill-norm { background: #dcfce7; color: #ffffff !important; border: 1px solid #bbf7d0; }
+            .range-pill-high { background: #fee2e2; color: #ffffff !important; border: 1px solid #fecaca; }
             .context-row-label { font-size: 0.71rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.1rem; }
 
             /* ── Metric tiles ────────────────────────────────── */
