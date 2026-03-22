@@ -579,9 +579,12 @@ def inject_css() -> None:
             [data-testid="stDataFrame"] td,
             [data-testid="stDataFrame"] th,
             [data-testid="stDataFrame"] span,
-            [data-testid="stDataFrame"] div { color: #0f172a !important; }
+            [data-testid="stDataFrame"] div { color: #0f172a !important; background-color: #ffffff !important; }
             [data-testid="stDataFrame"] tr:nth-child(even) td { background: #f8fafc !important; }
             [data-testid="stDataFrame"] tr:nth-child(odd) td  { background: #ffffff !important; }
+            [data-testid="stDataFrame"] [class*="dvn-scroller"],
+            [data-testid="stDataFrame"] [class*="stDataFrameGlideDataEditor"],
+            [data-testid="stDataFrame"] canvas { background: #ffffff !important; }
 
             /* Checkbox labels */
             .stCheckbox span { color: #334155 !important; }

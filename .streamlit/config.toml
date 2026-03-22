@@ -4,3 +4,6 @@ enableCORS = false
 
 [runner]
 magicEnabled = false
+
+[theme]
+base = "light"
