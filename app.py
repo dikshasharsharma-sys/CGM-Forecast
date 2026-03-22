@@ -535,6 +535,12 @@ def inject_css() -> None:
 
             /* ── Dataframe ───────────────────────────────────── */
             [data-testid="stDataFrame"] { border-radius: 12px; overflow: hidden; }
+            [data-testid="stDataFrame"] td,
+            [data-testid="stDataFrame"] th,
+            [data-testid="stDataFrame"] span,
+            [data-testid="stDataFrame"] div { color: #0f172a !important; }
+            [data-testid="stDataFrame"] tr:nth-child(even) td { background: #f8fafc !important; }
+            [data-testid="stDataFrame"] tr:nth-child(odd) td  { background: #ffffff !important; }
 
             /* ── Hero header ─────────────────────────────────── */
             @keyframes hero-shimmer {
