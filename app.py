@@ -889,7 +889,7 @@ def collect_all_predictions(
 
 def main() -> None:
     st.set_page_config(
-        page_title="CGM Glucose Forecast",
+        page_title="CGM Forecast",
         page_icon="🩸",
         layout="wide",
     )
@@ -902,7 +902,7 @@ def main() -> None:
 <div class="hero-orb-bl"></div>
 <div class="hero-inner">
 <div class="hero-eyebrow">&#9889;&nbsp; ML-Powered Glucose Forecasting Research Platform</div>
-<div class="hero-title">&#129656; CGM <span class="hero-title-accent">Glucose</span> Forecast</div>
+<div class="hero-title">&#129656; CGM <span class="hero-title-accent">Forecast</span></div>
 <div class="hero-subtitle">
 Short-term blood glucose prediction for Type 1 Diabetes &nbsp;&middot;&nbsp;
 MAE-weighted ensemble across two clinical datasets &nbsp;&middot;&nbsp;
