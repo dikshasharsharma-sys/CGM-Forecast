@@ -974,7 +974,7 @@ MAE-weighted ensemble across two clinical datasets &nbsp;&middot;&nbsp;
 30 &amp; 60 minute ahead forecasting
 </div>
 <div class="hero-stats">
-<div class="hero-stat"><span class="hero-stat-value hero-stat-value-purple">5</span><span class="hero-stat-label">ML Models</span></div>
+<div class="hero-stat"><span class="hero-stat-value">5</span><span class="hero-stat-label">ML Models</span></div>
 <div class="hero-stat"><span class="hero-stat-value hero-stat-value-blue">2</span><span class="hero-stat-label">Datasets</span></div>
 <div class="hero-stat"><span class="hero-stat-value hero-stat-value-amber">30&amp;60</span><span class="hero-stat-label">Min Horizon</span></div>
 <div class="hero-stat"><span class="hero-stat-value hero-stat-value-pink">48</span><span class="hero-stat-label">Experiments</span></div>
