@@ -3,6 +3,18 @@ from __future__ import annotations
 import os
 os.environ["OMP_NUM_THREADS"] = "1"
 
+# ── sklearn cross-version compatibility shim ─────────────────────────────────
+# Models saved with sklearn>=1.4 reference _RemainderColsList internally.
+# If the deployed environment has a different sklearn version, joblib fails to
+# deserialize. This patch ensures the symbol always exists before any model loads.
+try:
+    import sklearn.compose._column_transformer as _sct
+    if not hasattr(_sct, "_RemainderColsList"):
+        _sct._RemainderColsList = list
+except Exception:
+    pass
+# ─────────────────────────────────────────────────────────────────────────────
+
 import json
 from dataclasses import dataclass
 from pathlib import Path
