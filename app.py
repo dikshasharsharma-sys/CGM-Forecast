@@ -480,9 +480,9 @@ def inject_css() -> None:
             }
             .form-card-cgm .form-card-title   { color: #ffffff !important; font-size: 1.02rem; font-weight: 800; }
             .form-card-cgm .form-card-subtitle { color: rgba(255,255,255,0.85) !important; font-size: 0.76rem; font-weight: 500; margin-top: 0.2rem; }
-            .form-card-cgm .range-pill-low  { background: rgba(255,255,255,0.20); color: #fff; border: 1px solid rgba(255,255,255,0.35); }
-            .form-card-cgm .range-pill-norm { background: rgba(255,255,255,0.20); color: #fff; border: 1px solid rgba(255,255,255,0.35); }
-            .form-card-cgm .range-pill-high { background: rgba(255,255,255,0.20); color: #fff; border: 1px solid rgba(255,255,255,0.35); }
+            .form-card-cgm .range-pill-low  { background: rgba(255,255,255,0.20); color: #ffffff !important; border: 1px solid rgba(255,255,255,0.35); }
+            .form-card-cgm .range-pill-norm { background: rgba(255,255,255,0.20); color: #ffffff !important; border: 1px solid rgba(255,255,255,0.35); }
+            .form-card-cgm .range-pill-high { background: rgba(255,255,255,0.20); color: #ffffff !important; border: 1px solid rgba(255,255,255,0.35); }
 
             /* Insulin & Carbs card — pure crimson */
             .form-card-context {
